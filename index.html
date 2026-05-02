@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار التعبير - السلسلة العلمية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <h1>اختبار التعبير - السلسلة العلمية</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p class="question-tracker">السؤال <span id="current-question-num">1</span> من <span id="total-questions-num">10</span></p>
+        </header>
+
+        <section id="quiz-area" class="quiz-area active">
+            <h2 id="question-text" class="question-text">جاري تحميل السؤال...</h2>
+            <div id="options-container" class="options-container">
+                <!-- Options will be dynamically inserted here -->
+            </div>
+            <button id="next-btn" class="btn btn-primary" disabled>التالي</button>
+        </section>
+
+        <section id="result-area" class="result-area hidden">
+            <h2>النتيجة النهائية</h2>
+            <div class="score-circle">
+                <span id="score-text">0/10</span>
+            </div>
+            <p id="feedback-text" class="feedback-text">ممتاز!</p>
+            <button id="restart-btn" class="btn btn-secondary">إعادة الاختبار</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
